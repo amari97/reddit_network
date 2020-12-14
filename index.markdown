@@ -156,6 +156,19 @@ However this model performs worse than the balance theory when trained on a line
  
 ## At a local scale...
 
+We have seen at a global scale that the reddit network seem to comply with the weak balance theory. But 
+
+<div style="text-align:center"><h3>Is it still the case at a local scale?</h3></div>
+
+First let's try to group the subreddits into categories.
+
+Include cluster image
+
+As we can see we have... what type of cluster? Proportion? Connectivity?
+
+Balance+ Status...
+
+
 ## An evolution through time
 
 
