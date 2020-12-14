@@ -14,18 +14,23 @@ show_sidebar: false
 ---
 ## Abstract and objectives
 
-## The data
+
+> **The data**\
+We use this [reddit dataset](https://snap.stanford.edu/data/soc-RedditHyperlinks.html), which contains the hyperlink network representing the connections between subreddits in a post, from January 2014 to April 2017. The nature of the relationship (positive/negative) were previously obtained by Kumar S. et al[^1] using crowd-sourcing and training a text based classifier. We use a [complementary dataset](https://snap.stanford.edu/data/web-RedditEmbeddings.html) to group the subreddits into clusters.
 
 ## At a global scale...
 
+
+
 ## At a local scale...
 
-I bet you'd like more information about this sentence [^1].
 
 ## An evolution through time
 
+
+
 ## Conclusion
 
+[^1]: S. Kumar, W.L. Hamilton, J. Leskovec, D. Jurafsky. [Community Interaction and Conflict on the Web](https://cs.stanford.edu/~srijan/pubs/conflict-paper-www18.pdf). World Wide Web Conference, 2018
 
-
-[^1]: Well lucky for you, I've included more information in footnote form.
+[^2]: J. Leskovec, D. Huttenlocher, J. Kleinberg. [Signed networks in social media](https://cs.stanford.edu/people/jure/pubs/triads-chi10.pdf) Proceedings of the SIGCHI conference on human factors in computing systems. 2010.
