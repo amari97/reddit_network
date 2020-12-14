@@ -31,6 +31,12 @@ github_username:  jekyll
 theme: bulma-clean-theme
 # to uncomment for gh-pages
 remote_theme: chrisrhymes/bulma-clean-theme
+permalink: pretty
+favicon: /favicon.png
+hide_share_buttons: true
+#theme_color: '#eeeeee'
+#google_analytics: UA-code-here
+
 
 plugins:
   - jekyll-feed
