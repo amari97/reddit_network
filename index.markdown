@@ -63,7 +63,7 @@ which are highly controversial subjects and have a lot of connections. Also this
 <div style="text-align:center"><h3>What happens if we consider neighboring relationships?</h3></div>
 
 As a simple neighborhood, let's consider only relations between three subreddits with a connection between them. Hereafter we will call it a **triad**. 
-We begin our analysis with the **balance** theory, introduced by Heider in the 1940s[^2]. This theory conceptualise the tendency for some
+We begin our analysis with the **balance** theory, introduced by Heider in the 1940s[^2].
 
 
 <div class="container" style="display:flex;">
