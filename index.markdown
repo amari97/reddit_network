@@ -177,7 +177,7 @@ Until now we have only considered the last state of the network. However the net
 {% capture html %}
 {% include evolution.html %}
 {% endcapture %}
-{{ html | normalize_whitespace }}
+{{ html | normalize_whitespace }} 
 
 ## Conclusion
 
