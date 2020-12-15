@@ -156,13 +156,18 @@ However this model performs worse than the balance theory when trained on a line
  
 ## At a local scale...
 
-We have seen at a global scale that the reddit network seem to comply with the weak balance theory. But 
+We have seen that for the reddit network the weak balance theory seems to hold. But 
 
 <div style="text-align:center"><h3>Is it still the case at a local scale?</h3></div>
 
-First let's try to group the subreddits into categories.
+To address this question we must first group the subreddits into distinct communities.
+To this end we use this [complementary dataset](https://snap.stanford.edu/data/web-RedditEmbeddings.html) providing information about what kind of users frequent which subreddits. Using this the subreddits are grouped into the communities shown in this graph:
+<body>
+    <div align="center">
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://chart-studio.plotly.com/~youssef.saied/1/#/"></iframe>
+    </div>
+</body>
 
-Include cluster image
 
 As we can see we have... what type of cluster? Proportion? Connectivity?
 
