@@ -11,6 +11,7 @@ toc: true
 menubar_toc: false
 hero_darken: true
 show_sidebar: false
+bokeh: true
 ---
 ## Abstract and objectives
 
@@ -71,7 +72,7 @@ We begin our analysis with the **balance** theory, introduced by Heider in the 1
 <table>
 <thead>
 <tr>
-<th align="center">Sentence</th>
+<th align="center">Statement</th>
 <th align="center">Occurrence</th>
 </tr>
 </thead>
@@ -99,7 +100,7 @@ We begin our analysis with the **balance** theory, introduced by Heider in the 1
 
 <div class="row" style="width: 45%;margin: auto; margin-top: 1em; margin-bottom: 2em;">
     <div style="padding: 10px 20px; text-align:justify;">
-      <p>This theory claims that some type of triad to appear more often than the others. In particular, the theory is based on the assumption that whenever there exists an interpersonal relationships between two people, communities, then there exists a harmony so that the ideas shared by both subjects coexist without any tension and complication. This leads for example to an overrepresentation of the situation <I>the friend of my friend is my friend</I>.
+      <p>This theory claims that some type of triad to appear more often than the others. In particular, the theory is based on the assumption that whenever there exists an interpersonal relationships between two people, communities, then there exists a harmony so that the ideas shared by both subjects coexist without any tension. This leads for example to an overrepresentation of the situation <I>the friend of my friend is my friend</I>.
 </p>
     </div>
   </div>
@@ -113,10 +114,10 @@ To check if this relation holds in the Reddit network, we trained a linear class
 <table>
 	<thead>
 	<tr>
-	<th align="center">Sentence</th>
+	<th align="center">Statement</th>
 	<th align="center">Prediction</th>
 	<th align="center">Balance Theory</th>
-	<th align="center">Weakly Balance Theory</th>
+	<th align="center">Weak Balance Theory</th>
 	</tr>
 	</thead>
 	<tbody>
@@ -171,12 +172,17 @@ To this end we use this [complementary dataset](https://snap.stanford.edu/data/w
 
 As we can see we have... what type of cluster? Proportion? Connectivity?
 
-Balance+ Status...
+Balance+ Status... 
 
 
 ## An evolution through time
 
+Until now we have only considered the last state of the network. However the network evolves through time: some hyperlinks are created, the sentiment of the associated post might change. Let's examine the proportion of positive link created each month in the categories defined previously.
 
+{% capture html %}
+{% include evolution.html %}
+{% endcapture %}
+{{ html | normalize_whitespace }} 
 
 ## Conclusion
 
