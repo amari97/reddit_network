@@ -108,7 +108,7 @@ We begin our analysis with the **balance** theory, introduced by Heider in the 1
 </div>
 >This theory can be extended to the **weak structural balance** theory, by weakening the assumption and stating that only *the friend of my friend is my enemy* relationship should be underrepresented, as introduced by Davis in the 1960s[^3].
 
-To check if this relation holds in the Reddit network, we trained a linear classifier to guess the sign (positive/negative) of the closing edge of the triad using the characteristic of the other two relationships, that already exists when this hyperlink is created. As some subreddits have a preference for a certain type of relationships (e.g. controversial as we have seen [before](#activityVSsign), we need to include a parameter to account for this. We see that the Reddit network has a weakly balance structure.
+To check if this relation holds in the Reddit network, we trained a linear classifier to guess the sign (positive/negative) of the closing edge of the triad using the characteristic of the other two relationships, that already exists when this hyperlink is created. As some subreddits have a preference for a certain type of relationships (e.g. controversial as we have seen [before](#activityVSsign), we need to include a parameter to account for this. We see that the Reddit network has adheres to the weak balance structure.
 
 <div style="width: 80%;margin: auto;">
 <table>
@@ -150,14 +150,14 @@ To check if this relation holds in the Reddit network, we trained a linear class
 </div>
 **So, what's next?**
 
-The previous theory might oversimplify the situation, as other mechanisms might at stake. Here, we apply the theory of status as described in Signed Network in Social Media paper[^4]. This theory introduces a new perspective to the creation of a relation between two subreddits: positive relationships are created from a subreddit with a lower status in the graph to a subreddit with higher status. The status can be interpreted in this situation as respect.
+The previous theory might oversimplify the situation, as other crucial mechanisms might have been ignored. Here, we apply the theory of status as described in Signed Network in Social Media paper[^4]. This theory introduces a new perspective to the creation of a relation between two subreddits: positive relationships are created from a subreddit with a lower status in the graph to a subreddit with higher status. The status can be interpreted in this situation as respect.
 
-However this model performs worse than the balance theory when trained on a linear classifier.
+However this model performs worse than the balance theory when trained on a linear classifier. 
 
  
 ## At a local scale...
 
-We have seen that for the reddit network the weak balance theory seems to hold. But 
+We have seen that for the reddit network the weak balance theory seems to hold. But
 
 <div style="text-align:center"><h3>Is it still the case at a local scale?</h3></div>
 
@@ -171,7 +171,27 @@ To this end we use this [complementary dataset](https://snap.stanford.edu/data/w
 
 
 
-As we can see we have... what type of cluster? Proportion? Connectivity?
+The communities labeled in the graph above were the ones that were identified as the most relevant for analysis as they are sufficiently populated with nodes *and* said nodes are sufficiently interacting with each other (in our records). Other non-coherent communities were combined into an *Others* community. 
+
+The communities were then classified into one of three classes based on how much the subreddits of the communities interact and how positive on average their interactions are: 
+1. Interacting social communities (high connectivity and interactivity and average negativity):
+
+	* _Adult content_ : This community contains adult dating subreddits and similar subreddits
+	* _Sports_
+	* _Tech_
+	* _Gaming_
+	* _Media_
+
+2. *Polemic* interacting social communities (high connectivity and interactivity and high negativity edge proportion):
+
+	*  _Politics_
+	* _Popular subjects_
+
+3. Non-communities clusters (low connectivity or interactivity):
+
+	*  _Porn_
+	* _Others_
+    
 
 Balance+ Status... 
 
