@@ -22,7 +22,7 @@ output:
 
 Online social media has grown in popularity over the years, attracting more and more users to interact and share. As such, their complexity has also increased. Among them, Reddit's social news allows its users to interact and build communities, submitting various content and topics for discussion.
 
-The goal of this project is to reveal what is the underlying structure of the network
+The goal of this project is to reveal what is the underlying structure of the network:
 - How hyperlinks are created between subreddits ? 
 - Can we characterise them using an existing social theory ? 
 - Are the results the same at all scale (i.e. when a single specific community is considered)? 
