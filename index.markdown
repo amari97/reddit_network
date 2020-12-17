@@ -1,3 +1,4 @@
+<link href="https://github.com/amari97/reddit_network/blob/gh-pages/_includes/style_button.css" rel="stylesheet"></link>
 ---
 layout: page
 title: A journey into the Reddit network
@@ -13,8 +14,6 @@ hero_darken: true
 show_sidebar: false
 bokeh: true
 ---
-
-<link href="_includes/style_button.css" rel="stylesheet"></link>
 
 ## Abstract and objectives
 
