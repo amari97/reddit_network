@@ -244,10 +244,8 @@ We also observed that during certain periods, some subreddits created significan
   </div>
 </div>
 
-{% capture html %}
-{% include test_button.html %}
-{% endcapture %}
-{{ html | normalize_whitespace }} 
+
+<iframe src="test_button.html"></iframe>
 
 One particular interesting example is the **Politics** category, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections.
 
