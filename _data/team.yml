@@ -1,0 +1,11 @@
+- tier_name: Our team
+  size: large
+  description: |-
+    
+  sponsors:
+    - name: Antoine Bourret
+      profile: https://github.com/AntoineB0urret
+    - name: Alessandro Mari
+      profile: https://github.com/amari97
+    - name: Youssef Saied
+      profile: https://github.com/YoussefSaied

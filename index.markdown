@@ -31,30 +31,42 @@ The figure shows that more active subreddits are more likely to produce negative
 
 <div class="container" style="display:flex; position:relative;width: 80%; ">
   <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+  <a href="https://www.reddit.com/r/SubredditDrama/" target="_blank" style="text-decoration: none; color: #505050;">
     <div style="border-radius: 25px;background-color: Gainsboro; padding: 10px 20px; text-align:center;">
       <p><b>SubredditDrama</b></p>
     </div>
+      </a>
   </div>
+  
 <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+<a href="https://www.reddit.com/r/ShitRedditSays/" target="_blank" style="text-decoration: none; color: #505050;">
     <div style="border-radius: 25px;background-color: Gainsboro; padding: 10px 20px; text-align:center;">
       <p><b>ShitRedditSays</b></p>
     </div>
+     </a>
   </div>
+ 
 <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+<a href="https://www.reddit.com/r/Drama/" target="_blank" style="text-decoration: none; color: #505050;">
     <div style="border-radius: 25px;background-color: Gainsboro; padding: 10px 20px; text-align:center;">
       <p><b>Drama</b></p>
     </div>
+      </a>
   </div>
 <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+<a href="https://www.reddit.com/r/conspiracy/" target="_blank" style="text-decoration: none; color: #505050;">
     <div style="border-radius: 25px;background-color:Gainsboro; padding: 10px 20px; text-align:center;">
       <p><b>conspiracy</b></p>
     </div>
+      </a>
   </div>
 
 <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+<a href="https://www.reddit.com/r/The_Donald/" target="_blank" style="text-decoration: none; color: #505050;">
     <div style="border-radius: 25px;background-color:Gainsboro; padding: 10px 20px; text-align:center;">
       <p><b>The_Donald</b></p>
     </div>
+      </a>
   </div>
 
 </div>
@@ -108,7 +120,7 @@ We begin our analysis with the **balance** theory, introduced by Heider in the 1
 </div>
 >This theory can be extended to the **weak structural balance** theory, by weakening the assumption and stating that only *the friend of my friend is my enemy* relationship should be underrepresented, as introduced by Davis in the 1960s[^3].
 
-To check if this relation holds in the Reddit network, we trained a linear classifier to guess the sign (positive/negative) of the closing edge of the triad using the characteristic of the other two relationships, that already exists when this hyperlink is created. As some subreddits have a preference for a certain type of relationships (e.g. controversial as we have seen [before](#activityVSsign), we need to include a parameter to account for this. We see that the Reddit network has adheres to the weak balance structure.
+To check if this relation holds in the Reddit network, we trained a linear classifier to guess the sign (positive/negative) of the closing edge of the triad using the characteristic of the other two relationships, that already exists when this hyperlink is created. As some subreddits have a preference for a certain type of relationships (e.g. controversial as we have seen [before](#activityVSsign)), we need to include a parameter to account for this. The table below shows if a statement is more likely to appear when compared to a randomized network. the predicted of the model. We see that the Reddit network adheres to the weak balance structure.
 
 <div style="width: 80%;margin: auto;">
 <table>
