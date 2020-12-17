@@ -15,6 +15,8 @@ bokeh: true
 ---
 ## Abstract and objectives
 
+Online social media has grown in popularity over the years, attracting more and more users to interact and share. As such, their complexity has also increased. Among them, Reddit's social news allows its users to interact and build communities, submitting various content and topics for discussion. More importantly, here we present some results on how these topics relate to each other, both on a large scale and on a smaller scale, i.e. when a single specific community is considered.
+
 
 > **The data**\
 We use this [reddit dataset](https://snap.stanford.edu/data/soc-RedditHyperlinks.html), which contains the hyperlink network representing the connections between subreddits in a post, from January 2014 to April 2017. The nature of the relationship (positive/negative) were previously obtained by Kumar S. et al[^1] using crowd-sourcing and training a text based classifier. We use a [complementary dataset](https://snap.stanford.edu/data/web-RedditEmbeddings.html) to group the subreddits into clusters.
