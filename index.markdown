@@ -244,7 +244,7 @@ We also observed that during certain periods, some subreddits created significan
   </div>
 </div>
 
-One particular interesting example is the **Politics** categorie, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections.
+One particular interesting example is the **Politics** category, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections.
 
 ## Conclusion
 
