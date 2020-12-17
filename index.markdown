@@ -12,10 +12,23 @@ menubar_toc: false
 hero_darken: true
 show_sidebar: false
 bokeh: true
+output:
+ html_document:
+  css: _includes/style_button.css
 ---
+
+
 ## Abstract and objectives
 
-Online social media has grown in popularity over the years, attracting more and more users to interact and share. As such, their complexity has also increased. Among them, Reddit's social news allows its users to interact and build communities, submitting various content and topics for discussion. More importantly, we present here some results on how these topics relate to each other, both on a large scale and on a smaller scale, i.e. when a single specific community is considered.
+Online social media has grown in popularity over the years, attracting more and more users to interact and share. As such, their complexity has also increased. Among them, Reddit's social news allows its users to interact and build communities, submitting various content and topics for discussion.
+
+The goal of this project is to reveal what is the underlying structure of the network:
+- How hyperlinks are created between subreddits ? 
+- Can we characterise them using an existing social theory ? 
+- Are the results the same at all scale (i.e. when a single specific community is considered)? 
+- Does the network exhibits structural changes through time?
+
+We present here some results on how these topics relate to each other, both on a large scale and on a smaller scale. Finally we explore the evolution of the network through time.
 
 
 > **The data**\
@@ -224,27 +237,25 @@ These observations might reveal some polarization of these two clusters, which c
 
 We also observed that during certain periods, some subreddits created significantly more negative edges than usual. We call these periods **conflicts**, as they might be caused by a coordinated attack of negative hyperlinks. We manage to confirm this hypothesis on the following three categories, for which conflicting periods systematically involved the creation of negative hyperlinks by popular subreddits:
 
-<div class="container" style="display:flex; position:relative;width: 80%; ">
+
+<div class="container" style="display:flex; position:relative;width: 80%; border: none">
   <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-    <div style="border-radius: 25px;background-color: Gainsboro; padding: 10px 20px; text-align:center;">
-      <p><b>Popular subjects</b></p>
-    </div>
+      <button class="button" style="background-color:rgba(135,206,235,0.3)">Popular subjects</button>
   </div>
-  
-<div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-    <div style="border-radius: 25px;background-color: Gainsboro; padding: 10px 20px; text-align:center;">
-      <p><b>Gaming</b></p>
-    </div>
+
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+    <button class="button" style="background-color:rgba(135,206,235,0.3)">Gaming</button>
   </div>
- 
-<div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-    <div style="border-radius: 25px;background-color: Gainsboro; padding: 10px 20px; text-align:center;">
-      <p><b>Politics</b></p>
-    </div>
+
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+  <button class="button" style="background-color:rgba(135,206,235,0.3)">Politics</button>
   </div>
+
 </div>
 
-One particular interesting example is the **Politics** category, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections.
+
+One particular interesting example is the **Politics** category, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections. Also the participation to conflicts differ between the categories: **Politics** and **Popular subjects**  involve more subreddits (about 15-20%) than **Gaming** (only 5-6%). This means that conflits in **Politics** and **Popular subjects** tend to concern a larger proportion of the community.
+
 
 ## Conclusion
 
