@@ -5,7 +5,7 @@ subtitle: Hyperlink formation
 #image: /reddit_network/image.jpg
 description: The pages meta description
 hero_image: /reddit_network/img/network_hero.jpg
-#hero_height: is-fullheight
+hero_height: is-fullheight
 toc: true
 #toc_title: Table of Contents
 menubar_toc: false
@@ -25,8 +25,8 @@ Online social media has grown in popularity over the years, attracting more and 
 The goal of this project is to reveal what is the underlying structure of the network:
 - How hyperlinks are created between subreddits ? 
 - Can we characterise them using an existing social theory ? 
-- Are the results the same at all scale (i.e. when a single specific community is considered)? 
-- Does the network exhibits structural changes through time?
+- Are the results the same at all scale (i.e. when a single specific community is considered) ? 
+- Does the network exhibit structural changes through time ?
 
 We present here some results on how these topics relate to each other, both on a large scale and on a smaller scale. Finally we explore the evolution of the network through time.
 
@@ -40,7 +40,7 @@ We use this [reddit dataset](https://snap.stanford.edu/data/soc-RedditHyperlinks
 <div style="text-align:center"><a name="activityVSsign"></a><h3>Where are the negative edges located?</h3></div>
 As a starting point, looking at the proportion of negative edges in subgroups might be helpful. More precisely, let's look at the proportion as a function of the **activity** of the subreddits.
 
-<div style="text-align:center"><img style="width:50%" src="/reddit_network/img/activityVSsign.png" /></div>
+<div style="text-align:center"><img style="width:60%" src="/reddit_network/img/activityVSsign.svg" /></div>
 
 The figure shows that more active subreddits are more likely to produce negative posts towards other subreddits than positive posts. Indeed we find for example
 
@@ -183,6 +183,7 @@ However this model performs worse than the balance theory when trained on a line
 
  
 ## At a local scale...
+<div style="text-align:center"><a name="local_scale"></a></div>
 
 We have seen that for the reddit network the weak balance theory seems to hold. But
 
@@ -254,7 +255,7 @@ We also observed that during certain periods, some subreddits created significan
 </div>
 
 
-One particular interesting example is the **Politics** category, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections. Also the participation to conflicts differ between the categories: **Politics** and **Popular subjects**  involve more subreddits (about 15-20%) than **Gaming** (only 5-6%). This means that conflits in **Politics** and **Popular subjects** tend to concern a larger proportion of the community.
+One particular interesting example is the **Politics** category, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections. Also the participation to conflicts differ between the categories: **Politics** and **Popular subjects**  involve more subreddits (about 15-20%) than **Gaming** (only 5-6%). This means that conflits in **Politics** and **Popular subjects** tend to concern a larger proportion of the community. These results confirm the *polemic* type of these categories, as it is remarked in the previous [section](#local_scale).
 
 
 ## Conclusion
