@@ -15,11 +15,11 @@ bokeh: true
 ---
 ## Abstract and objectives
 
-Online social media has grown in popularity over the years, attracting more and more users to interact and share. As such, their complexity has also increased. Among them, Reddit's social news allows its users to interact and build communities, submitting various content and topics for discussion. More importantly, here we present some results on how these topics relate to each other, both on a large scale and on a smaller scale, i.e. when a single specific community is considered.
+Online social media has grown in popularity over the years, attracting more and more users to interact and share. As such, their complexity has also increased. Among them, Reddit's social news allows its users to interact and build communities, submitting various content and topics for discussion. More importantly, we present here some results on how these topics relate to each other, both on a large scale and on a smaller scale, i.e. when a single specific community is considered.
 
 
 > **The data**\
-We use this [reddit dataset](https://snap.stanford.edu/data/soc-RedditHyperlinks.html), which contains the hyperlink network representing the connections between subreddits in a post, from January 2014 to April 2017. The nature of the relationship (positive/negative) were previously obtained by Kumar S. et al[^1] using crowd-sourcing and training a text based classifier. We use a [complementary dataset](https://snap.stanford.edu/data/web-RedditEmbeddings.html) to group the subreddits into clusters.
+We use this [reddit dataset](https://snap.stanford.edu/data/soc-RedditHyperlinks.html), which contains a network of the hyperlinks in a post between subreddits, from January 2014 to April 2017. The nature of the relationship (positive/negative) were previously obtained by Kumar S. et al[^1] using crowd-sourcing and training a text based classifier. We use a [complementary dataset](https://snap.stanford.edu/data/web-RedditEmbeddings.html) to group the subreddits into clusters.
 
 ## At a global scale...
 
@@ -114,7 +114,7 @@ We begin our analysis with the **balance** theory, introduced by Heider in the 1
 
 <div class="row" style="width: 45%;margin: auto; margin-top: 1em; margin-bottom: 2em;">
     <div style="padding: 10px 20px; text-align:justify;">
-      <p>This theory claims that some type of triad to appear more often than the others. In particular, the theory is based on the assumption that whenever there exists an interpersonal relationships between two people, communities, then there exists a harmony so that the ideas shared by both subjects coexist without any tension. This leads for example to an overrepresentation of the situation <I>the friend of my friend is my friend</I>.
+      <p>This theory claims that some types of triads appear more often than the others. In particular, the theory is based on the assumption that whenever there exists an interpersonal relationship between two people, communities, then there exists a harmony so that the ideas shared by both subjects coexist without any tension. This leads for example to an overrepresentation of the situation <I>the friend of my friend is my friend</I>.
 </p>
     </div>
   </div>
@@ -164,9 +164,9 @@ To check if this relation holds in the Reddit network, we trained a linear class
 </div>
 **So, what's next?**
 
-The previous theory might oversimplify the situation, as other crucial mechanisms might have been ignored. Here, we apply the theory of **status** as described in Signed Network in Social Media paper[^4]. This theory introduces a new perspective to the creation of a relation between two subreddits: positive relationships are created from a subreddit with a lower status in the graph to a subreddit with higher status. The status can be interpreted in this situation as respect.
+The previous theory might oversimplify the situation, as other crucial mechanisms might have been ignored. Here, we apply the theory of **status** as described in Signed Network in Social Media paper[^4]. This theory introduces a new perspective to the creation of a relation between two subreddits: positive links are created from a subreddit with a lower status in the network to a subreddit with higher status. The status can be interpreted in this situation as respect.
 
-However this model performs worse than the balance theory when trained on a linear classifier. 
+However this model performs worse than the balance theory when trained on a linear classifier and the status theory does not match the measurements.
 
  
 ## At a local scale...
@@ -219,7 +219,7 @@ Until now we have only considered the last state of the network. However the net
 {% endcapture %}
 {{ html | normalize_whitespace }} 
 
-Using a simple regression analysis, the only communities that have a major uptrend in the proportion of negative hyperlinks created per month are the **Gaming** and **Adult content** communities.
+Using a simple regression analysis, the only communities that have a significant uptrend in the proportion of negative hyperlinks created per month are the **Gaming** and **Adult content** communities.
 These observations might reveal some polarization of these two clusters, which could question the application of the _weak balance theory_ in a distant future. 
 
 We also observed that during certain periods, some subreddits created significantly more negative edges than usual. We call these periods **conflicts**, as they might be caused by a coordinated attack of negative hyperlinks. We manage to confirm this hypothesis on the following three categories, for which conflicting periods systematically involved the creation of negative hyperlinks by popular subreddits:
