@@ -182,7 +182,7 @@ To this end we use this [complementary dataset](https://snap.stanford.edu/data/w
 <iframe width="800" height="700" frameborder="0" scrolling="no" src="https://chart-studio.plotly.com/~youssef.saied/1/#/"></iframe>
     </div>
 </body>
-
+<div style="text-align:center"><img style="width:70%" src="/reddit_network/img/Cluster_graph.png" /></div>
 
 
 The communities labeled in the graph above were the ones that were identified as the most relevant for analysis as they are sufficiently populated with nodes *and* said nodes are sufficiently interacting with each other (in our records). Other non-coherent communities were combined into an *Others* community. 
