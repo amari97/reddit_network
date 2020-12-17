@@ -192,34 +192,69 @@ To address this question we must first group the subreddits into distinct commun
 To this end we use this [complementary dataset](https://snap.stanford.edu/data/web-RedditEmbeddings.html) providing information about what kind of users frequent which subreddits. Using this the subreddits are grouped into the communities shown in this interactive plot:
 <body>
     <div align="center">
-<iframe width="800" height="700" frameborder="0" scrolling="no" src="https://chart-studio.plotly.com/~youssef.saied/1/#/"></iframe>
+<iframe width="800" height="700" frameborder="0" scrolling="no" src="https://chart-studio.plotly.com/~youssef.saied/1.embed?link=false"></iframe>
     </div>
 </body>
+
 <div style="text-align:center"><img style="width:70%" src="/reddit_network/img/Cluster_graph.png" /></div>
 
 
 The communities labeled in the graph above were the ones that were identified as the most relevant for analysis as they are sufficiently populated with nodes *and* said nodes are sufficiently interacting with each other (in our records). Other non-coherent communities were combined into an *Others* community. 
 
 The communities were then classified into one of three classes based on how much the subreddits of the communities interact and how positive on average their interactions are: 
-1. Interacting social communities (high connectivity and interactivity and average negativity):
 
-	* _Adult content_ : This community contains adult dating subreddits and similar subreddits
-	* _Sports_
-	* _Tech_
-	* _Gaming_
-	* _Media_
+* Interacting social communities (high connectivity and interactivity and average negativity):
 
-2. *Polemic* interacting social communities (high connectivity and interactivity and high negativity edge proportion):
+<div class="container" style="display:flex; position:relative;width: 80%; border: none">
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+      <button class="button" style="background-color:rgba(135,206,235,0.3)">Adult content</button>
+  </div>
 
-	*  _Politics_
-	* _Popular subjects_
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+    <button class="button" style="background-color:rgba(135,206,235,0.3)">Gaming</button>
+  </div>
 
-3. Non-communities clusters (low connectivity or interactivity):
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+  <button class="button" style="background-color:rgba(135,206,235,0.3)">Media</button>
+  </div>
+  
+   <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+  <button class="button" style="background-color:rgba(135,206,235,0.3)">Tech</button>
+  </div>
+  
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+  <button class="button" style="background-color:rgba(135,206,235,0.3)">Sports</button>
+  </div>
+</div>
 
-	*  _Porn_
-	* _Others_
-    
 
+* *Polemic* interacting social communities (high connectivity and interactivity and high negativity edge proportion):
+
+
+
+<div class="container" style="display:flex; position:relative;width: 80%; border: none">
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+      <button class="button" style="background-color:rgba(135,206,235,0.3)">Politics</button>
+  </div>
+
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+    <button class="button" style="background-color:rgba(135,206,235,0.3)">Popular subjects</button>
+ </div>
+</div>
+
+* Non-communities clusters (low connectivity or interactivity):
+
+
+
+<div class="container" style="display:flex; position:relative;width: 80%; border: none">
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+      <button class="button" style="background-color:rgba(135,206,235,0.3)">Porn</button>
+  </div>
+
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+    <button class="button" style="background-color:rgba(135,206,235,0.3)">Others</button>
+  </div>
+</div>
 Balance+ Status... 
 
 
