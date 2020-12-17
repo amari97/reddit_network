@@ -120,7 +120,7 @@ We begin our analysis with the **balance** theory, introduced by Heider in the 1
 </div>
 >This theory can be extended to the **weak structural balance** theory, by weakening the assumption and stating that only *the friend of my friend is my enemy* relationship should be underrepresented, as introduced by Davis in the 1960s[^3].
 
-To check if this relation holds in the Reddit network, we trained a linear classifier to guess the sign (positive/negative) of the closing edge of the triad using the characteristic of the other two relationships, that already exists when this hyperlink is created. As some subreddits have a preference for a certain type of relationships (e.g. controversial as we have seen [before](#activityVSsign)), we need to include a parameter to account for this. The table below shows if a statement is more likely to appear when compared to a randomized network. the predicted of the model. We see that the Reddit network adheres to the weak balance structure.
+To check if this relation holds in the Reddit network, we trained a linear classifier to guess the sign (positive/negative) of the closing edge of the triad using the characteristic of the other two relationships, that already exists when this hyperlink is created. As some subreddits have a preference for a certain type of relationships (e.g. controversial as we have seen [before](#activityVSsign)), we need to include a parameter to account for this. The table below shows if a statement is more likely to appear when compared to a randomized network. We observe that the Reddit network adheres to the weak balance structure.
 
 <div style="width: 80%;margin: auto;">
 <table>
@@ -162,7 +162,7 @@ To check if this relation holds in the Reddit network, we trained a linear class
 </div>
 **So, what's next?**
 
-The previous theory might oversimplify the situation, as other crucial mechanisms might have been ignored. Here, we apply the theory of status as described in Signed Network in Social Media paper[^4]. This theory introduces a new perspective to the creation of a relation between two subreddits: positive relationships are created from a subreddit with a lower status in the graph to a subreddit with higher status. The status can be interpreted in this situation as respect.
+The previous theory might oversimplify the situation, as other crucial mechanisms might have been ignored. Here, we apply the theory of **status** as described in Signed Network in Social Media paper[^4]. This theory introduces a new perspective to the creation of a relation between two subreddits: positive relationships are created from a subreddit with a lower status in the graph to a subreddit with higher status. The status can be interpreted in this situation as respect.
 
 However this model performs worse than the balance theory when trained on a linear classifier. 
 
@@ -174,10 +174,10 @@ We have seen that for the reddit network the weak balance theory seems to hold. 
 <div style="text-align:center"><h3>Is it still the case at a local scale?</h3></div>
 
 To address this question we must first group the subreddits into distinct communities.
-To this end we use this [complementary dataset](https://snap.stanford.edu/data/web-RedditEmbeddings.html) providing information about what kind of users frequent which subreddits. Using this the subreddits are grouped into the communities shown in this interactive graph:
+To this end we use this [complementary dataset](https://snap.stanford.edu/data/web-RedditEmbeddings.html) providing information about what kind of users frequent which subreddits. Using this the subreddits are grouped into the communities shown in this interactive plot:
 <body>
     <div align="center">
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://chart-studio.plotly.com/~youssef.saied/1/#/"></iframe>
+<iframe width="800" height="700" frameborder="0" scrolling="no" src="https://chart-studio.plotly.com/~youssef.saied/1/#/"></iframe>
     </div>
 </body>
 
@@ -210,7 +210,7 @@ Balance+ Status...
 
 ## An evolution through time
 
-Until now we have only considered the last state of the network. However the network evolves through time: some hyperlinks are created, the sentiment of the associated post might change. Let's examine the proportion of positive link created each month in the categories defined previously.
+Until now we have only considered the last state of the network. However the network evolves through time: some hyperlinks are created, the sentiment of the associated post might change. Let's examine the proportion of positive link created each month in the categories defined above.
 
 {% capture html %}
 {% include evolution.html %}
