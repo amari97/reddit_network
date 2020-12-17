@@ -227,26 +227,6 @@ These observations might reveal some polarization of these two clusters, which c
 
 We also observed that during certain periods, some subreddits created significantly more negative edges than usual. We call these periods **conflicts**, as they might be caused by a coordinated attack of negative hyperlinks. We manage to confirm this hypothesis on the following three categories, for which conflicting periods systematically involved the creation of negative hyperlinks by popular subreddits:
 
-<div class="container" style="display:flex; position:relative;width: 80%; ">
-  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-    <div style="border-radius: 25px;background-color: Gainsboro; padding: 10px 20px; text-align:center;">
-      <p><b>Popular subjects</b></p>
-    </div>
-  </div>
-  
-<div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-    <div style="border-radius: 25px;background-color: Gainsboro; padding: 10px 20px; text-align:center;">
-      <p><b>Gaming</b></p>
-    </div>
-  </div>
- 
-<div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-    <div style="border-radius: 25px;background-color: Gainsboro; padding: 10px 20px; text-align:center;">
-      <p><b>Politics</b></p>
-    </div>
-  </div>
-</div>
-
 
 <div class="container" style="display:flex; position:relative;width: 100%; border: none">
   <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
@@ -266,7 +246,9 @@ We also observed that during certain periods, some subreddits created significan
   </div>
 </div>
 
-One particular interesting example is the **Politics** category, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections.
+
+One particular interesting example is the **Politics** category, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections. Also the participation to conflicts differ between the categories: **Politics** and **Popular subjects**  involve more subreddits (about 15-20%) than **Gaming** (only 5-6%).
+
 
 ## Conclusion
 
