@@ -12,9 +12,11 @@ menubar_toc: false
 hero_darken: true
 show_sidebar: false
 bokeh: true
+output:
+ html_document:
+  css: _includes/style_button.css
 ---
-//<link href="https://github.com/amari97/reddit_network/blob/gh-pages/_includes/style_button.css" rel="stylesheet"/>
-<link href="_includes/style_button.css" rel="stylesheet"/>
+
 
 ## Abstract and objectives
 
