@@ -14,7 +14,7 @@ show_sidebar: false
 bokeh: true
 ---
 
-<link href="style_button.css" rel="stylesheet"></link>
+<link href="_includes/style_button.css" rel="stylesheet"></link>
 
 ## Abstract and objectives
 
