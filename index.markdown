@@ -193,7 +193,7 @@ To address this question we must first group the subreddits into distinct commun
 To this end we use this [complementary dataset](https://snap.stanford.edu/data/web-RedditEmbeddings.html) providing information about what kind of users frequent which subreddits. Using this the subreddits are grouped into the communities shown in this interactive plot:
 <body>
     <div align="center">
-<iframe width="800" height="700" frameborder="0" scrolling="no" src="https://chart-studio.plotly.com/~youssef.saied/1.embed?link=false"></iframe>
+<iframe width="800" height="700" frameborder="0" scrolling="no" src="https://chart-studio.plotly.com/~youssef.saied/3.embed?link=false"></iframe>
     </div>
 </body>
 
