@@ -217,6 +217,33 @@ Until now we have only considered the last state of the network. However the net
 {% endcapture %}
 {{ html | normalize_whitespace }} 
 
+Using a simple regression analysis, the only communities that have a major uptrend in the proportion of negative hyperlinks created per month are the **Gaming** and **Adult content** communities.
+These observations might reveal some polarization of these two clusters, which could question the application of the _weak balance theory_ in a distant future. 
+
+We also observed that during certain periods, some subreddits created significantly more negative edges than usual. We call these periods **conflicts**, as they might be caused by a coordinated attack of negative hyperlinks. We manage to confirm this hypothesis on the following three categories, for which conflicting periods systematically involved the creation of negative hyperlinks by popular subreddits:
+
+<div class="container" style="display:flex; position:relative;width: 80%; ">
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+    <div style="border-radius: 25px;background-color: Gainsboro; padding: 10px 20px; text-align:center;">
+      <p><b>Popular subjects</b></p>
+    </div>
+  </div>
+  
+<div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+    <div style="border-radius: 25px;background-color: Gainsboro; padding: 10px 20px; text-align:center;">
+      <p><b>Gaming</b></p>
+    </div>
+  </div>
+ 
+<div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+    <div style="border-radius: 25px;background-color: Gainsboro; padding: 10px 20px; text-align:center;">
+      <p><b>Politics</b></p>
+    </div>
+  </div>
+</div>
+
+One particular interesting example is the **Politics** categorie, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections.
+
 ## Conclusion
 
 
