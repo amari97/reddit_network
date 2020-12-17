@@ -13,6 +13,9 @@ hero_darken: true
 show_sidebar: false
 bokeh: true
 ---
+
+<link href="style_button.css" rel="stylesheet"></link>
+
 ## Abstract and objectives
 
 Online social media has grown in popularity over the years, attracting more and more users to interact and share. As such, their complexity has also increased. Among them, Reddit's social news allows its users to interact and build communities, submitting various content and topics for discussion. More importantly, we present here some results on how these topics relate to each other, both on a large scale and on a smaller scale, i.e. when a single specific community is considered.
@@ -245,10 +248,23 @@ We also observed that during certain periods, some subreddits created significan
 </div>
 
 
-{% capture html %}
-{% include test_button.html %}
-{% endcapture %}
-{{ html | normalize_whitespace }} 
+<div class="container" style="display:flex; position:relative;width: 100%; border: none">
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+      <button class="button">Gaming</button>
+  </div>
+
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+    <button class="button">Lol</button>
+  </div>
+
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+    <button class="button">Politics</button>
+  </div>
+
+  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
+    <button class="button">Hello</button>
+  </div>
+</div>
 
 One particular interesting example is the **Politics** category, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections.
 
