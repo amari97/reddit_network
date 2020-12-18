@@ -228,7 +228,7 @@ The communities were then classified into one of three classes based on how much
   </div>
 </div>
 
-These are communities where the subreddits both interact together at a reasonable rate ---as defined by the number of hyperlinks created per subreddit and  also some graph theoretical property indicative of high connected a graph is _transitivity_ --- and by average level of negativity of said interactions. The theory of balance is more applicable here in general and all these communities have an higher than normal presence of the friend of my friend is my friend type of interaction in contrast to the two other types of communities.
+These are communities where the subreddits both interact together at a reasonable rate ---as defined by the number of hyperlinks created per subreddit and  also some graph theoretical property indicative of high connected a graph is _transitivity_ --- and by average level of negativity of said interactions. The theory of balance is more applicable here in general and all these communities have an higher than normal presence of the friend of my friend is my friend type of interaction in contrast to the two other types of communities. The community **Adult content** seems to be the only community that fully respects the _weak_ balance theory,
 
 
 * *Polemic* interacting social communities (high connectivity and interactivity and high negativity edge proportion):
