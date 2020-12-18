@@ -37,8 +37,8 @@ We use this [reddit dataset](https://snap.stanford.edu/data/soc-RedditHyperlinks
 ## At a global scale...
 
 
-<div style="text-align:center"><a name="activityVSsign"></a><h3>Where are the negative edges located?</h3></div>
-As a starting point, looking at the proportion of negative edges in subgroups might be helpful. More precisely, let's look at the proportion as a function of the **activity** of the subreddits.
+<div style="text-align:center"><a name="activityVSsign"></a><h3 id="where-are-the-negative-links-located?">Where are the negative links located?</h3></div>
+As a starting point, looking at the proportion of negative links in subgroups might be helpful. More precisely, let's look at the proportion as a function of the **activity** of the subreddits.
 
 <div style="text-align:center"><img style="width:60%" src="/reddit_network/img/activityVSsign.svg" /></div>
 
@@ -88,7 +88,7 @@ The figure shows that more active subreddits are more likely to produce negative
 
 which are highly controversial subjects and have a lot of connections. Also this effect vanishes if we assume that the user randomly write positive/negative posts.
 
-<div style="text-align:center"><h3>What happens if we consider neighboring relationships?</h3></div>
+<div style="text-align:center"><h3 id="what-happens-if-we-consider-neighboring-relationships?">What happens if we consider neighboring relationships?</h3></div>
 
 As a simple neighborhood, let's consider only relations between three subreddits with a connection between them. Hereafter we will call it a **triad**. 
 We begin our analysis with the **balance** theory, introduced by Heider in the 1940s[^2].
@@ -187,7 +187,7 @@ However this model performs worse than the balance theory when trained on a line
 
 We have seen that for the reddit network the weak balance theory seems to hold. But
 
-<div style="text-align:center"><h3>Is it still the case at a local scale?</h3></div>
+<div style="text-align:center"><h3 id="is-it-still-the-case-at-a-local-scale?">Is it still the case at a local scale?</h3></div>
 
 To address this question we must first group the subreddits into distinct communities.
 To this end we use this [complementary dataset](https://snap.stanford.edu/data/web-RedditEmbeddings.html) providing information about what kind of users frequent which subreddits. Using this the subreddits are grouped into the communities shown in this interactive plot:
@@ -197,71 +197,137 @@ To this end we use this [complementary dataset](https://snap.stanford.edu/data/w
     </div>
 </body>
 
+
+The communities labeled in the graph above were the ones that were identified as the most relevant for analysis. They contain a sufficient large amount of subreddits, which reasonably interact with each other (in our records). Other non-coherent communities were combined into an **Others** community. 
+
 <div style="text-align:center"><img style="width:70%" src="/reddit_network/img/Cluster_graph.svg" /></div>
 
+The communities were then classified into one of three classes based on how much the subreddits of the communities interact and how positive on average their interactions are
 
-The communities labeled in the graph above were the ones that were identified as the most relevant for analysis as they are sufficiently populated with nodes **and** said nodes are sufficiently interacting with each other (in our records). Other non-coherent communities were combined into an **Others** community. 
+<div style="text-align:center"><h3 id="socially-Interacting"><i>Socially Interacting</i> communities</h3></div>
 
-The communities were then classified into one of three classes based on how much the subreddits of the communities interact and how positive on average their interactions are: 
-
-* *Interacting social* communities (high connectivity and interactivity and average negativity):
-
-<div class="container" style="display:flex; position:relative;width: 80%; border: none">
-  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-      <button class="button" style="background-color:rgba(135,206,235,0.3)">Adult content</button>
-  </div>
-
-  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-    <button class="button" style="background-color:rgba(135,206,235,0.3)">Gaming</button>
-  </div>
-
-  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-  <button class="button" style="background-color:rgba(135,206,235,0.3)">Media</button>
-  </div>
-  
-   <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-  <button class="button" style="background-color:rgba(135,206,235,0.3)">Tech</button>
-  </div>
-  
-  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-  <button class="button" style="background-color:rgba(135,206,235,0.3)">Sports</button>
-  </div>
+<div style="width: 60%;margin: auto;">
+<table>
+    <thead>
+    <tr>
+    <th align="center">Features</th>
+    <th align="center">Examples</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td style="text-align: center;
+    vertical-align: middle;">
+      <p>High connectivity</p>
+      <p>High Interactivity</p>
+      <p>Average negativity</p>
+    </td>
+    <td style="text-align: center;
+    vertical-align: middle;">
+    <div class="container" style="display:flex; position:relative;width: 100%; border: none">
+    <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 1em;">
+        <button class="button" style="background-color:rgba(135,206,235,0.3)">Adult content</button>
+    </div>
+    <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 1em;">
+      <button class="button" style="background-color:rgba(135,206,235,0.3)">Gaming</button>
+    </div>
+    <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 1em;">
+    <button class="button" style="background-color:rgba(135,206,235,0.3)">Media</button>
+    </div>
+    </div>
+    <div class="container" style="display:flex; position:relative;width: 60%; border: none">
+     <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 1em;">
+    <button class="button" style="background-color:rgba(135,206,235,0.3)">Tech</button>
+    </div>
+    <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 1em;">
+    <button class="button" style="background-color:rgba(135,206,235,0.3)">Sports</button>
+    </div>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 </div>
 
-These are communities where the subreddits both interact together at a reasonable rate ---as defined by the number of hyperlinks created per subreddit and  also some graph theoretical property indicative of high connected a graph is _transitivity_ --- and by average level of negativity of said interactions. The theory of balance is more applicable here in general and all these communities have an higher than normal presence of the friend of my friend is my friend type of interaction in contrast to the two other types of communities but nevertheless the community **Adult content** seems to be the only community that fully respects the _weak_ balance theory.
+
+These are communities where the subreddits both interact together at a reasonable rate --- as defined by the number of hyperlinks created per subreddit and also some graph theoretical property indicative of high connected a graph is _transitivity_ --- and by average level of negativity of said interactions. 
+
+A: These are communities where the subreddits both interact together at a reasonable rate. This is measured by number of hyperlinks created per subreddits and by the  _transitivity_ of the graph --- some graph theoretical property indicative of highly connected networks. Also they exhibit an average level of negative interactions. 
+
+A: In general these communities seem to follow the theory of balance. The statement *friend of my friend is my friend* is more represented than expected in all communities, which is a characteristic of the *Socially Interacting* communities. Nevertheless the community **Adult content** seems to be the only community that fully respects the _weak_ balance theory.
+
+The theory of balance is more applicable here in general and all these communities have an higher than normal presence of the friend of my friend is my friend type of interaction in contrast to the two other types of communities but nevertheless the community **Adult content** seems to be the only community that fully respects the _weak_ balance theory.
 
 
-* *Polemic interacting social* communities (high connectivity and interactivity and high negativity edge proportion):
-
-
-
-<div class="container" style="display:flex; position:relative;width: 80%; border: none">
-  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-      <button class="button" style="background-color:rgba(135,206,235,0.3)">Politics</button>
-  </div>
-
-  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-    <button class="button" style="background-color:rgba(135,206,235,0.3)">Popular subjects</button>
- </div>
+<div style="text-align:center"><h3 id="polemic-Interacting"><i>Polemic Interacting</i> communities</h3></div>
+<div style="width: 60%;margin: auto;">
+<table>
+    <thead>
+    <tr>
+    <th align="center">Features</th>
+    <th align="center">Examples</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td style="text-align: center;
+    vertical-align: middle;">
+      <p>High connectivity</p>
+      <p>High Interactivity</p>
+      <p>High negative hyperlink proportion</p>
+    </td>
+    <td style="text-align: center;
+    vertical-align: middle;"><div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 1em;">
+         <button class="button" style="background-color:rgba(135,206,235,0.3)">Politics</button>
+     </div>
+     <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 1em;">
+       <button class="button" style="background-color:rgba(135,206,235,0.3)">Popular subjects</button>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 </div>
 
-This second class of communities is defined by its subreddits both interacting together at a reasonable rate and having a higher than average level of negativity of said interactions. The theory of balance is not at all applicable here in general and all these communities have a lower than normal presence of _the friend of my friend is my friend_ type of interaction and a higher than normal presence of the counterintuitive _the enemy of my enemy is my enemy type of interaction_. This is probably due to the polemic nature of these categories leading to a lower than normal presence of non-binary classifications of the simplistic friend and enemy, thus leading to the inapplicability of the social theory of balance. 
+This second class of communities differ from the first one by having a higher level of negative interactions. The theory of balance is not at all applicable here in general. 
 
-* *Non-communities* clusters (low connectivity or interactivity):
+A: Surprisingly the relation _the friend of my friend is my friend_ is underrepresented in all communities and the counterintuitive _the enemy of my enemy is my enemy_ is overrepresented. This is probably due to the polemic nature of these categories: ???
+
+All communities have a lower than normal presence of _the friend of my friend is my friend_ type of interaction and a higher than normal presence of the counterintuitive _the enemy of my enemy is my enemy type of interaction_. This is probably due to the polemic nature of these categories leading to a lower than normal presence of non-binary classifications of the simplistic friend and enemy, thus leading to the inapplicability of the social theory of balance. 
 
 
-
-<div class="container" style="display:flex; position:relative;width: 80%; border: none">
-  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-      <button class="button" style="background-color:rgba(135,206,235,0.3)">Porn</button>
-  </div>
-
-  <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
-    <button class="button" style="background-color:rgba(135,206,235,0.3)">Others</button>
-  </div>
+<div style="text-align:center"><h3 id="non-community"><i>Non-community</i> clusters</h3></div>
+<div style="width: 60%;margin: auto;">
+<table>
+    <thead>
+    <tr>
+    <th align="center">Features</th>
+    <th align="center">Examples</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td style="text-align: center;
+    vertical-align: middle;">
+      <p>Low connectivity</p>
+      <p>Low Interactivity</p>
+    </td>
+    <td style="text-align: center;
+    vertical-align: middle;"><div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 1em;">
+        <button class="button" style="background-color:rgba(135,206,235,0.3)">Porn</button>
+    </div>
+    <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 1em;">
+      <button class="button" style="background-color:rgba(135,206,235,0.3)">Others</button>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 </div>
 
-This last class of communities are not in fact communities at all, with a low, almost non-existent level of interactivity (an order of magnitude lower than other communities) and low connectivity. These communities do not lend themselves to any type of social analysis. One such "community", **Porn** is an archetypical example of this class. The subreddits in said community do not seem to interact at all. Probably due to the inherent _non-interactive_ nature of this community. All theme-related _interacting_ subreddits should be found in the **Adults** community. The theory of balance does not apply here.
+This last class of communities are not in fact communities at all, with a low, almost non-existent level of interactivity (an order of magnitude lower than other communities) and low connectivity. They were grouped together because users often search for similar content.
+
+These communities do not lend themselves to any type of social analysis. One such "community", **Porn** is an archetypical example of this class. The subreddits in this community do not seem to interact at all. Probably due to the inherent _non-interactive_ nature of this community: this is a **passive** community. All theme-related _interacting_ subreddits should be found in the **Adults content** community. Neither the balance theory nor the status theory apply here.
 
 ## An evolution through time
 
@@ -294,7 +360,7 @@ We also observed that during certain periods, some subreddits created significan
 </div>
 
 
-One particular interesting example is the **Politics** category, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections. Also the participation to conflicts differ between the categories: **Politics** and **Popular subjects**  involve more subreddits (about 15-20%) than **Gaming** (only 5-6%). This means that conflits in **Politics** and **Popular subjects** tend to concern a larger proportion of the community. These results confirm the *polemic* type of these categories, as it is remarked in the previous [section](#local_scale).
+One particular interesting example is the **Politics** category, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections. Also the participation to conflicts differ between the categories: **Politics** and **Popular subjects**  involve more subreddits (about 15-20%) than **Gaming** (only 5-6%). This means that conflits in **Politics** and **Popular subjects** tend to concern a larger proportion of the community. These results confirm the *polemic* nature of these categories, as it was noted in the previous [section](#local_scale).
 
 
 ## Conclusion
