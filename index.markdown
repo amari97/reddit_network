@@ -249,14 +249,9 @@ The communities were then classified into one of three classes based on how much
     </table>
 </div>
 
+These are communities where the subreddits both interact together at a reasonable rate. This is measured by number of hyperlinks created per subreddits and by the  _transitivity_ of the graph --- some graph theoretical property indicative of how connected a network is. Also they exhibit an average level of negative interactions. 
 
-These are communities where the subreddits both interact together at a reasonable rate --- as defined by the number of hyperlinks created per subreddit and also some graph theoretical property indicative of high connected a graph is _transitivity_ --- and by average level of negativity of said interactions. 
-
-A: These are communities where the subreddits both interact together at a reasonable rate. This is measured by number of hyperlinks created per subreddits and by the  _transitivity_ of the graph --- some graph theoretical property indicative of highly connected networks. Also they exhibit an average level of negative interactions. 
-
-A: In general these communities seem to follow the theory of balance. The statement *friend of my friend is my friend* is more represented than expected in all communities, which is a characteristic of the *Socially Interacting* communities. Nevertheless the community **Adult content** seems to be the only community that fully respects the _weak_ balance theory.
-
-The theory of balance is more applicable here in general and all these communities have an higher than normal presence of the friend of my friend is my friend type of interaction in contrast to the two other types of communities but nevertheless the community **Adult content** seems to be the only community that fully respects the _weak_ balance theory.
+In general these communities seem to follow the weak theory of balance. The statement *friend of my friend is my friend* is overrepresented in all communities, which is a characteristic of the *Socially Interacting* communities. Nevertheless the community **Adult content** seems to be the only community that fully respects the _weak_ balance theory.
 
 
 <div style="text-align:center"><h3 id="polemic-Interacting"><i>Polemic Interacting Social</i> communities</h3></div>
