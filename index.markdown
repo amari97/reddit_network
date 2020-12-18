@@ -204,7 +204,7 @@ The communities labeled in the graph above were the ones that were identified as
 
 The communities were then classified into one of three classes based on how much the subreddits of the communities interact and how positive on average their interactions are: 
 
-* Interacting social communities (high connectivity and interactivity and average negativity):
+* *Interacting social* communities (high connectivity and interactivity and average negativity):
 
 <div class="container" style="display:flex; position:relative;width: 80%; border: none">
   <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
@@ -231,7 +231,7 @@ The communities were then classified into one of three classes based on how much
 These are communities where the subreddits both interact together at a reasonable rate ---as defined by the number of hyperlinks created per subreddit and  also some graph theoretical property indicative of high connected a graph is _transitivity_ --- and by average level of negativity of said interactions. The theory of balance is more applicable here in general and all these communities have an higher than normal presence of the friend of my friend is my friend type of interaction in contrast to the two other types of communities but nevertheless the community **Adult content** seems to be the only community that fully respects the _weak_ balance theory.
 
 
-* *Polemic* interacting social communities (high connectivity and interactivity and high negativity edge proportion):
+* *Polemic interacting social* communities (high connectivity and interactivity and high negativity edge proportion):
 
 
 
@@ -247,7 +247,7 @@ These are communities where the subreddits both interact together at a reasonabl
 
 This second class of communities is defined by its subreddits both interacting together at a reasonable rate and having a higher than average level of negativity of said interactions. The theory of balance is not at all applicable here in general and all these communities have a lower than normal presence of _the friend of my friend is my friend_ type of interaction and a higher than normal presence of the counterintuitive _the enemy of my enemy is my enemy type of interaction_. This is probably due to the polemic nature of these categories leading to a lower than normal presence of non-binary classifications of the simplistic friend and enemy, thus leading to the inapplicability of the social theory of balance. 
 
-* Non-communities clusters (low connectivity or interactivity):
+* *Non-communities* clusters (low connectivity or interactivity):
 
 
 
