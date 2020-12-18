@@ -299,6 +299,15 @@ One particular interesting example is the **Politics** category, for which we ob
 
 ## Conclusion
 
+So, overall, what have we learned with this analysis of the Reddit network ? First, the network exhibit complex structures, as the usual balance and status theory do not seem to apply here, with negative hyperlinks that tend to be created by subreddits that participate more in the social network. Thus, accounting for the popularity of the subreddits creating the hyperlink is necessary. Doing so, we have found a prevalence for situations of the type _my friend of my friend is my friend_. 
+
+Due to its complex structure and the diversity of subreddits, an analysis at a local scale reveals a classification of communities of subreddits into three categories: 
+* the _interacting social communities_, such as **Gaming** and **Tech**, for which the weak balance theory holds
+* the _polemic interacting social communities_, that includes **Politics** and **Popular subjects** communities, with a large presence of situations of the type _the enemy of my enemy is my enemy_.
+* the non-communities clusters, that rarely interact, such as **Porn**.  
+
+Lastly, we used a temporal analysis to detect periods of _conflicts_, characterised by a large increase in the number of newly created negative hyperlinks. In addition to having a uptrend for the proportion of such negative hyperlinks created per month, the **Gaming** category has conflicts caused by subreddits that tend to be more popular.
+
 
 ## References
 [^1]: S. Kumar, W.L. Hamilton, J. Leskovec, D. Jurafsky. [Community Interaction and Conflict on the Web](https://cs.stanford.edu/~srijan/pubs/conflict-paper-www18.pdf). World Wide Web Conference, 2018
