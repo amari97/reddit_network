@@ -341,7 +341,7 @@ Until now we have only considered the last state of the network. However the net
 Using a simple regression analysis, the only communities that have a significant uptrend in the proportion of negative hyperlinks created per month are the **Gaming** and **Adult content** communities.
 These observations might reveal some polarization of these two clusters, which could question the application of the _weak balance theory_ in a distant future. 
 
-We also observed that during certain periods, some subreddits created significantly more negative edges than usual. We call these periods **conflicts**, as they might be caused by a coordinated attack of negative hyperlinks. We manage to confirm this hypothesis on the following three categories, for which conflicting periods systematically involved the creation of negative hyperlinks by popular subreddits:
+We also observed that during certain periods, some subreddits created significantly more negative hyperlinks than usual. We call these periods **conflicts**, as they might be caused by a coordinated attack of negative hyperlinks. We manage to confirm this hypothesis on the following three categories, for which conflicting periods systematically involved the creation of negative hyperlinks by popular subreddits:
 
 
 <div class="container" style="display:flex; position:relative;width: 80%; border: none">
