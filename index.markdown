@@ -200,11 +200,11 @@ To this end we use this [complementary dataset](https://snap.stanford.edu/data/w
 <div style="text-align:center"><img style="width:70%" src="/reddit_network/img/Cluster_graph.png" /></div>
 
 
-The communities labeled in the graph above were the ones that were identified as the most relevant for analysis as they are sufficiently populated with nodes *and* said nodes are sufficiently interacting with each other (in our records). Other non-coherent communities were combined into an *Others* community. 
+The communities labeled in the graph above were the ones that were identified as the most relevant for analysis as they are sufficiently populated with nodes **and** said nodes are sufficiently interacting with each other (in our records). Other non-coherent communities were combined into an **Others** community. 
 
 The communities were then classified into one of three classes based on how much the subreddits of the communities interact and how positive on average their interactions are: 
 
-* Interacting social communities (high connectivity and interactivity and average negativity):
+* *Interacting social* communities (high connectivity and interactivity and average negativity):
 
 <div class="container" style="display:flex; position:relative;width: 80%; border: none">
   <div class="row" style="margin: auto; margin-top: 1em; margin-bottom: 2em;">
@@ -228,8 +228,10 @@ The communities were then classified into one of three classes based on how much
   </div>
 </div>
 
+These are communities where the subreddits both interact together at a reasonable rate ---as defined by the number of hyperlinks created per subreddit and  also some graph theoretical property indicative of high connected a graph is _transitivity_ --- and by average level of negativity of said interactions. The theory of balance is more applicable here in general and all these communities have an higher than normal presence of the friend of my friend is my friend type of interaction in contrast to the two other types of communities but nevertheless the community **Adult content** seems to be the only community that fully respects the _weak_ balance theory.
 
-* *Polemic* interacting social communities (high connectivity and interactivity and high negativity edge proportion):
+
+* *Polemic interacting social* communities (high connectivity and interactivity and high negativity edge proportion):
 
 
 
@@ -243,7 +245,9 @@ The communities were then classified into one of three classes based on how much
  </div>
 </div>
 
-* Non-communities clusters (low connectivity or interactivity):
+This second class of communities is defined by its subreddits both interacting together at a reasonable rate and having a higher than average level of negativity of said interactions. The theory of balance is not at all applicable here in general and all these communities have a lower than normal presence of _the friend of my friend is my friend_ type of interaction and a higher than normal presence of the counterintuitive _the enemy of my enemy is my enemy type of interaction_. This is probably due to the polemic nature of these categories leading to a lower than normal presence of non-binary classifications of the simplistic friend and enemy, thus leading to the inapplicability of the social theory of balance. 
+
+* *Non-communities* clusters (low connectivity or interactivity):
 
 
 
@@ -256,8 +260,8 @@ The communities were then classified into one of three classes based on how much
     <button class="button" style="background-color:rgba(135,206,235,0.3)">Others</button>
   </div>
 </div>
-Balance+ Status... 
 
+This last class of communities are not in fact communities at all, with a low, almost non-existent level of interactivity (an order of magnitude lower than other communities) and low connectivity. These communities do not lend themselves to any type of social analysis. One such "community", **Porn** is an archetypical example of this class. The subreddits in said community do not seem to interact at all. Probably due to the inherent _non-interactive_ nature of this community. All theme-related _interacting_ subreddits should be found in the **Adults** community. The theory of balance does not apply here.
 
 ## An evolution through time
 
