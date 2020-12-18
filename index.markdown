@@ -354,14 +354,16 @@ We also observed that during certain periods, some subreddits created significan
 
 
 One particular interesting example is the **Politics** category, for which we observed a massive increase in negative hyperlinks on November 2016, for the US elections. Also the participation to conflicts differ between the categories: **Politics** and **Popular subjects**  involve more subreddits (about 15-20%) than **Gaming** (only 5-6%). This means that conflits in **Politics** and **Popular subjects** tend to concern a larger proportion of the community. These results confirm the *polemic* nature of these categories, as it was noted in the previous [section](#local_scale).
+Y.S.: These results are in line with the *polemic* nature of these categories, as was discussed in the previous [section](#local_scale).
 
 
 ## Conclusion
 
-So, overall, what have we learned with this analysis of the Reddit network ? First, the network exhibit complex structures, as the usual balance and status theory do not seem to apply here, with negative hyperlinks that tend to be created by subreddits that participate more in the social network. Thus, accounting for the popularity of the subreddits creating the hyperlink is necessary. Doing so, we have found a prevalence for situations of the type _my friend of my friend is my friend_. 
+So, overall, what have we learned with this analysis of the Reddit network ? First, the network exhibit complex structures, as the usual balance and status theory do not seem to apply here, with negative hyperlinks that tend to be created by subreddits that participate more in the social network. Thus, accounting for the popularity of the subreddits creating the hyperlink is necessary. Doing so, we have found a prevalence for situations (Y.S.: interactions) of the type _my friend of my friend is my friend_. 
 
 Due to its complex structure and the diversity of subreddits, an analysis at a local scale reveals a classification of communities of subreddits into three categories: 
-* the _interacting social communities_, such as **Gaming** and **Tech**, for which the weak balance theory holds
+* the _interacting social communities_, such as **Gaming** and **Tech**, for which the weak balance theory holds.
+* Y.S.: the _interacting social communities_, such as **Adult content** and **Tech**, for which the weak balance theory holds or at least interactions of the type _my friend of my friend is my friend_ are overrepresented.
 * the _polemic interacting social communities_, that includes **Politics** and **Popular subjects** communities, with a large presence of situations of the type _the enemy of my enemy is my enemy_.
 * the non-communities clusters, that rarely interact, such as **Porn**.  
 
