@@ -204,7 +204,7 @@ The communities labeled in the graph above were the ones that were identified as
 
 The communities were then classified into one of three classes based on how much the subreddits of the communities interact and how positive on average their interactions are
 
-<div style="text-align:center"><h3 id="socially-Interacting"><i>Socially Interacting</i> communities</h3></div>
+<div style="text-align:center"><h3 id="socially-Interacting"><i>Interacting Social</i> communities</h3></div>
 
 <div style="width: 60%;margin: auto;">
 <table>
@@ -259,7 +259,7 @@ A: In general these communities seem to follow the theory of balance. The statem
 The theory of balance is more applicable here in general and all these communities have an higher than normal presence of the friend of my friend is my friend type of interaction in contrast to the two other types of communities but nevertheless the community **Adult content** seems to be the only community that fully respects the _weak_ balance theory.
 
 
-<div style="text-align:center"><h3 id="polemic-Interacting"><i>Polemic Interacting</i> communities</h3></div>
+<div style="text-align:center"><h3 id="polemic-Interacting"><i>Polemic Interacting Social</i> communities</h3></div>
 <div style="width: 60%;margin: auto;">
 <table>
     <thead>
