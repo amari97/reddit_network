@@ -295,7 +295,7 @@ All communities of this class have an underrepresentation of thr _the friend of 
     <thead>
     <tr>
     <th align="center">Features</th>
-    <th align="center">Communities</th>
+    <th align="center">Clusters</th>
     </tr>
     </thead>
     <tbody>
