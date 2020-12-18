@@ -211,7 +211,7 @@ The communities were then classified into one of three classes based on how much
     <thead>
     <tr>
     <th align="center">Features</th>
-    <th align="center">Examples</th>
+    <th align="center">Communities</th>
     </tr>
     </thead>
     <tbody>
@@ -265,7 +265,7 @@ The theory of balance is more applicable here in general and all these communiti
     <thead>
     <tr>
     <th align="center">Features</th>
-    <th align="center">Examples</th>
+    <th align="center">Communities</th>
     </tr>
     </thead>
     <tbody>
@@ -291,9 +291,7 @@ The theory of balance is more applicable here in general and all these communiti
 
 This second class of communities differ from the first one by having a higher level of negative interactions. The theory of balance is not at all applicable here in general. 
 
-A: Surprisingly the relation _the friend of my friend is my friend_ is underrepresented in all communities and the counterintuitive _the enemy of my enemy is my enemy_ is overrepresented. This is probably due to the polemic nature of these categories: ???
-
-All communities have a lower than normal presence of _the friend of my friend is my friend_ type of interaction and a higher than normal presence of the counterintuitive _the enemy of my enemy is my enemy type of interaction_. This is probably due to the polemic nature of these categories leading to a lower than normal presence of non-binary classifications of the simplistic friend and enemy, thus leading to the inapplicability of the social theory of balance. 
+All communities of this class have an underrepresentation of thr _the friend of my friend is my friend_ type of interaction and an overrepresentation of the counterintuitive _the enemy of my enemy is my enemy type of interaction_. This is probably due to the polemic nature of these categories and the possible complexity of the realtionships between the subreddits in such communities. The social theories presented here such as balance are mainly based on binary simplistic classification of relations as one of either friendship or animosity. Thus given the aforementioned complexity they should not be expected to hold for these communities, which is the result we find as neither status or balance hold for any of these communities. 
 
 
 <div style="text-align:center"><h3 id="non-community"><i>Non-community</i> clusters</h3></div>
@@ -302,7 +300,7 @@ All communities have a lower than normal presence of _the friend of my friend is
     <thead>
     <tr>
     <th align="center">Features</th>
-    <th align="center">Examples</th>
+    <th align="center">Communities</th>
     </tr>
     </thead>
     <tbody>
@@ -325,9 +323,9 @@ All communities have a lower than normal presence of _the friend of my friend is
     </table>
 </div>
 
-This last class of communities are not in fact communities at all, with a low, almost non-existent level of interactivity (an order of magnitude lower than other communities) and low connectivity. They were grouped together because users often search for similar content.
+This last class of communities are in fact not communities at all, with a low, almost non-existent level of interactivity (an order of magnitude lower than other communities) and low connectivity. They were grouped together because users often search for similar content.
 
-These communities do not lend themselves to any type of social analysis. One such "community", **Porn** is an archetypical example of this class. The subreddits in this community do not seem to interact at all. Probably due to the inherent _non-interactive_ nature of this community: this is a **passive** community. All theme-related _interacting_ subreddits should be found in the **Adults content** community. Neither the balance theory nor the status theory apply here.
+These cluster do not lend themselves to any type of social analysis. One such cluster, **Porn** is an archetypical example of this class. The subreddits in this cluster do not seem to interact at all. Probably due to the inherent _non-interactive_ nature of this community: this is a **passive** cluster. All theme-related _interacting_ subreddits should be found in the **Adults content** community. Neither the balance theory nor the status theory were found to apply for this class.
 
 ## An evolution through time
 
